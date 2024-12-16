@@ -18,6 +18,7 @@ public class MatrizApp {
 			}
 		}
 		
+		System.out.println("Matriz que contiene numeros generados aleatoriamente:");
 		for (int i = 0; i < matriz.length; i++) { //Recorre cada fila
 			for (int j = 0; j < matriz[i].length; j++) { //Recorre cada columna de cada fila
 				System.out.print(matriz[i][j] + " "); //Genera un numero aleatorio en la posición seleccionada
