@@ -10,19 +10,20 @@ public class MatrizApp {
 		//matriz-inicial: Para generar y mostrar la matriz de números aleatorios.
 		Random r = new Random();
 		
-		int[][] matriz = new int[5][5];
+		int[][] matriz = new int[5][5]; //Declaración de la matriz junto con la cantidad de fila y columnas
 		
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz[i].length; j++) {
-				matriz[i][j] = r.nextInt(100) + 1;
+		for (int i = 0; i < matriz.length; i++) { //Recorre cada fila
+			for (int j = 0; j < matriz[i].length; j++) { //Recorre cada columna de cada fila
+				matriz[i][j] = r.nextInt(100) + 1; //Genera un numero aleatorio en la posición seleccionada
 			}
 		}
 		
-		for (int i = 0; i < matriz.length; i++) {
-			for (int j = 0; j < matriz[i].length; j++) {
-				System.out.print(matriz[i][j] + " ");
+		for (int i = 0; i < matriz.length; i++) { //Recorre cada fila
+			for (int j = 0; j < matriz[i].length; j++) { //Recorre cada columna de cada fila
+				System.out.print(matriz[i][j] + " "); //Genera un numero aleatorio en la posición seleccionada
 			}
 			System.out.println();
 		}
+		
 	}
 }
